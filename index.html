@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="styles/styles.css" type="text/css" />
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$.fn.circleFill = function(val){
+			var id = $(this).attr("id");
+			var fill = $(this).find(".fill");
+			var persantage = $(this).find(".persantage");
+			var count =0;			
+		var t = setInterval(function(){
+			var value=val;
+			if(count<value){
+				count++;
+				$(fill).css("height", count);
+				$(persantage).text(count+"%");
+				if(count<=60 && count>30){
+					$(fill).css("background-color","blue");
+					$(fill).css("animation-name", "base");
+					$(fill).css("-webkit-animation-name", "base");
+				}
+			else if(count<=100 && count>60){
+					$(fill).css("background-color","green");
+					$(fill).css("animation-name", "top");
+					$(fill).css("-webkit-animation-name", "top");
+				};
+				if(count>value){
+					clearInterval(t);
+				}	
+			}
+			
+		},20);		
+		};
+		$("#c1").circleFill("20");
+		$("#c2").circleFill("40");
+		$("#c3").circleFill("80");
+	})
+</script>
+<style type="text/css">
+
+</style>
+</head>
+
+<body>
+	<div class="circle" id="c1">
+    	<div class="fill"></div>
+        <span class="persantage"></span>
+    </div> 
+    <div class="circle" id="c2">
+    	<div class="fill"></div>
+        <span class="persantage"></span>
+    </div> 
+    <div class="circle" id="c3">
+    	<div class="fill"></div>
+        <span class="persantage"></span>
+    </div> 
+   
+</body>
+</html>
