@@ -1,0 +1,31 @@
+{
+    "name": "circleFill_v1.0",
+    "title": "jQuery Circle Color Fill",
+    "description": "jQuery plugin for Circle color Fill manipulation and animation support. it is just basic plugin. working on improvements",
+    "keywords": [
+		"JqueryCircleColorFill",
+		"CircleFill",
+		"CircleColorFill",
+		"Circle",
+        "color",
+        "animation"
+    ],
+    "version": "1",
+    "author": {
+        "name": "jQuery Foundation and other contributors",
+        "url": "https://github.com/00venu/Jquery_Circle_Fill.git"
+    },
+    "maintainers": [
+        {
+            "name": "Venu Madhav U",
+            "email": "00venu@gmail.com"
+        }
+    ],
+    "licenses": [
+		"type": "GPLv2",
+        "url": "http://www.example.com/licenses/gpl.html"        
+    ],
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}

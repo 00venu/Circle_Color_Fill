@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+}
+	.circle{
+		width:100px; 
+		height:100px; 
+		background-color:#fff; 
+		border:6px solid #ccc; 
+		border-radius:150px; 
+		position:relative; 
+		overflow:hidden;
+		float:left;
+		margin:0 20px;
+	}
+	.fill{
+		width:100px; 
+		height:10px; 
+		background-color:red; 
+		position:absolute; 
+		bottom:0;
+		animation-duration: 1s;
+		-webkit-animation-duration: 1s;
+	}
+	.persantage{
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		margin:auto;
+		line-height:100px;
+		z-index:100;
+		text-align:center;
+	}
+	/* Chrome, Safari, Opera */
+@-webkit-keyframes base {
+  	0% { background-color: red; }
+	100% { background-color: blue; }
+}
+
+/* Standard syntax */
+@keyframes base {
+  	0% { background-color: red; }
+	100% { background-color: blue; }
+}
+@-webkit-keyframes top {
+  	0% { background-color: blue; }
+	100% { background-color: green; }
+}
+
+@keyframes top {
+  	0% { background-color: blue; }
+	100% { background-color: green; }
+}
+
