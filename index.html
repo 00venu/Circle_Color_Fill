@@ -16,17 +16,17 @@
 			var value=val;
 			if(count<value){
 				count++;
-				$(fill).css("height", count);
-				$(persantage).text(count+"%");
+					fill.css("height", count);
+					persantage.text(count+"%");
 				if(count<=60 && count>30){
-					$(fill).css("background-color","blue");
-					$(fill).css("animation-name", "base");
-					$(fill).css("-webkit-animation-name", "base");
+						fill.css("background-color","blue")
+							.css("animation-name", "base")
+							.css("-webkit-animation-name", "base");
 				}
 			else if(count<=100 && count>60){
-					$(fill).css("background-color","green");
-					$(fill).css("animation-name", "top");
-					$(fill).css("-webkit-animation-name", "top");
+						fill.css("background-color","green")
+							.css("animation-name", "top")
+							.css("-webkit-animation-name", "top");
 				};
 				if(count>value){
 					clearInterval(t);
