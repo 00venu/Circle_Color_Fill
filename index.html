@@ -10,14 +10,14 @@
 		$.fn.circleFill = function(val){
 			var id = $(this).attr("id");
 			var fill = $(this).find(".fill");
-			var persantage = $(this).find(".persantage");
+			var Percentage  = $(this).find(".Percentage ");
 			var count =0;			
 		var t = setInterval(function(){
 			var value=val;
 			if(count<value){
 				count++;
 					fill.css("height", count);
-					persantage.text(count+"%");
+					Percentage .text(count+"%");
 				if(count<=60 && count>30){
 						fill.css("background-color","blue")
 							.css("animation-name", "base")
@@ -48,15 +48,15 @@
 <body>
 	<div class="circle" id="c1">
     	<div class="fill"></div>
-        <span class="persantage"></span>
+        <span class="Percentage "></span>
     </div> 
     <div class="circle" id="c2">
     	<div class="fill"></div>
-        <span class="persantage"></span>
+        <span class="Percentage "></span>
     </div> 
     <div class="circle" id="c3">
     	<div class="fill"></div>
-        <span class="persantage"></span>
+        <span class="Percentage "></span>
     </div> 
    
 </body>
